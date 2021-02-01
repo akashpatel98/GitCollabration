@@ -1,0 +1,28 @@
+body, html{
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    background :url("background.jpg") no-repeat;
+        -webkit-background-size: cover;
+    background-size: cover;
+
+}
+.wrapper{
+    width:1150px;
+    margin: auto;
+    display: flex;
+    min-height: 100%;
+    background-color: aqua;
+    flex-flow: row wrap;
+
+}
+.wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border: 10px;
+}
+.header{
+    background-color: wheat;
+    height: 60px;
+}

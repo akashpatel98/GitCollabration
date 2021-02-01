@@ -1,0 +1,34 @@
+
+.wrapper{
+    width:1180px;
+    margin: auto;
+    display: flex;
+    background-color: transparent;
+    flex-flow: row wrap;
+    margin-top: 70px;
+
+}
+.wrapper>*{
+    padding: 3px;
+    margin: 5px;
+    flex: 1 100%;
+    border: 2px;
+}
+
+.foot {
+    font-size: 20px;
+    text-align: -webkit-center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.imgContent {
+    align-content: center;
+    width: 30%;
+    height: 30%;
+}
+

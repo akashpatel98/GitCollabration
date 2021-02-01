@@ -1,0 +1,54 @@
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper>*{
+    padding: 10px;
+    margin: 10px;
+    flex:1 100%;
+    border-radius: 10px;
+}
+.header{
+    background-color: red;
+    height: 120px;
+}
+.footer{
+    background-color: lightblue;
+    height: 80px;
+}
+.main{
+    text-align: left;
+    background-color: wheat;
+    height: 300px;
+    font-size:24px;
+}
+.aside1{
+    background-color: gold;
+}
+.aside2{
+    background-color: blue;
+}
+@media all and(min-width: 800px){
+    .main{
+        flex: 2;
+    }
+    .aside1{
+        order: 1;
+    }
+    .aside2{
+        order:1;
+    }
+    .main{
+        order:2;
+    }
+    .footer{
+        order: 4;
+    }
+}
+@media all and (min-width: 600px) {
+    .aside{
+        flex: 1;
+    }
+    
+}

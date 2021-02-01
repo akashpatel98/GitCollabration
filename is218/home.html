@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Git Collab Tutorial</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <!-- Favicon -->
+</head>
+<body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Marketing</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+<body style="background-color: aliceblue">
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color: white">GIT Collab </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.html" style="color: white">HOME</a></li>
+                    <li><a href="git.html" style="color: white">GIT</a></li>
+                    <li><a href="home.html" style="color: white">DOCKER</a></li>
+                </ul>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="wrapper">
+        <h2> Introducing GitFlow</h2>
+        <p>GitFlow is a branching model for Git, created by Vincent Driessen.
+            It has attracted a lot of attention because it is very well suited to collaboration and scaling the development team</p>
+    <p> Key benefits:
+        <li> Parallel Development</li>
+        <li>Collaboration</li>
+        <li>Release Staging Area</li>
+        <li>Support For Emergency Fixes</li>
+        </p>
+
+    <p><strong> How it works</strong></p>
+        <img src="img/gitFlow1.PNG" height="500" width="450"/>
+
+        <ol>Some basic commands include:
+        <ol>
+        <li>git flow init </li>
+        <li>git flow feature start </li>
+        <li> git flow feature finish </li>
+        <li>git flow feature publish</li> </ol>
+        </ol>
+
+        <h2> Repository</h2>
+        <p>
+            Git is a program that tracks changes made to files. Once installed, Git can be initialized on a project to create a Git repository.
+            A Git repository is the <strong>.git/ </strong> folder inside a project. This repository tracks all changes made to files in your project, building a history over time.
+            Meaning, if you delete the .git/ folder, then you delete your project’s history.
+          <a href="https://blog.axosoft.com/learning-git-repository/#:~:text=Git%20is%20a%20program%20that%20tracks%20changes%20made%20to%20files.&text=A%20Git%20repository%20is%20the,
+         Meaning%2C%20if%20you%20delete%20the%20."> Read more</a> </p>
+        <h2> Clone</h2>
+        <p> If you want to get a copy of an existing Git repository — for example, a project you’d like to contribute to — the command you need is git clone. If you’re familiar with other VCS systems such as Subversion, you’ll notice that the command is "clone" and not "checkout". This is an important distinction — instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the
+            history of the project is pulled down by default when you run git clone.</p>
+        <p> You clone a repository with git clone &lturl&gt. </p>
+        <h2>Fork a repo</h2>
+        <p> A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+            Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+
+            Propose changes to someone else's project
+            For example, you can use forks to propose changes related to fixing a bug.</p>
+        <ol>Rather than logging an issue for a bug you've found, you can:</ol>
+        <li>Fork the repository.</li>
+        <li>Make the fix.</li>
+        <li>Submit a pull request to the project owner.</li>
+        <p><a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo"> Read More</a> </p>
+       <img src=" img/gitflow2.PNG" height="500" width="450"/>
+       <h2> Branch</h2>
+        <p>A branch represents an independent line of development.
+            Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.
+        </p>
+        <p>The git branch command lets you create, list, rename, and delete branches. It doesn’t let you switch between branches or put a forked history back together again. </p>
+        </p>
+        <ul>
+            <ul><li><h2>Master branch</h2></li></ul></ul>
+        <p> The default branch name in Git is master. As you start making commits, you’re given a master branch that points to the last commit you made. Every time you commit, the master branch pointer moves forward automatically.</p>
+        <ul> A new branch can be created by typing the following command:
+<ul>
+            <li style="color: red"> git branch &ltexampleBranch &gt </li></ul>
+        </ul>
+
+       <h2> Git Commit</h2>
+        <p>The git commit command captures a snapshot of the project's currently staged changes.
+            Committed snapshots can be thought of as “safe” versions of a project—Git will never change them unless you explicitly ask it to.
+            Prior to the execution of git commit, The git add command is used to promote or 'stage' changes to the project that will be stored in a commit.
+            These two commands "git commit" and "git add" are two of the most frequently used.
+        <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-commit"> Read More</a> </p>
+        <h2> Git Merge</h2>
+        <p>Merging is Git's way of putting a forked history back together again. The "git merge" command lets you take the independent lines of development
+            created by "git branch" and integrate them into a single branch.</p>
+        <p>Git merge will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches. The following examples in this document will focus on this branch merging pattern. In these scenarios, git merge takes two commit pointers, usually the branch tips, and will find a common base commit between them.
+        Once Git finds a common base commit it will create a new "merge commit" that combines the changes of each queued merge commit sequence.
+        <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Read More</a> </p>
+        <h2> Git Checkout</h2>
+        <p>The "git checkout" command lets you navigate between the branches created by "git branch". Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch. Think of it as a way to select which line of development you’re working on. </p>
+<p>The git checkout command may occasionally be confused with git clone. The difference between the two commands is that clone works to
+    fetch code from a remote repository, alternatively checkout works to switch between versions of code already on the local system.</p>
+        <p><ul>
+        The git checkout command accepts a -b argument that acts as a convenience method which will create the new branch and immediately switch to it.
+        <ul> <li style="color: red"> git checkout -b </li></ul></ul></p>
+        <a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout"> Read More</a> </p>
+    <h2>Git Push</h2>
+<p>The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the counterpart to git fetch, but whereas fetching imports commits to local branches, pushing exports commits to remote branches. Remote branches are configured using the git remote command. Pushing has the potential to overwrite changes,
+    caution should be taken when pushing.
+<a href="https://www.atlassian.com/git/tutorials/syncing/git-push#:~:text=The%20git%20push%20command%20is,exports%20commits%20to%20remote%20branches."> Read More</a></p>
+<img src="img/gitFlow3.PNG" height="500" width="450"/>
+
+<h2> Git Pull </h2>
+<p>The "git pull" command is used to fetch and download content from a remote repository and immediately update the local repository to
+    match that content. Merging remote upstream changes into your local repository is a common task in Git-based collaboration work flows.
+    The git pull command is actually a combination of two other commands, git fetch followed by git merge.
+    In the first stage of operation git pull will execute a git fetch scoped to the local branch that HEAD is pointed at.
+    Once the content is downloaded, git pull will enter a merge workflow. A new merge commit will be-created and HEAD updated to point at the new commit.</p>
+
+        <p><ul>
+        Command used:
+         <ul> <li style="color: red"> git pull &lt remote&gt </li></ul></ul>
+        <a href="https://www.atlassian.com/git/tutorials/syncing/git-pull#:~:text=The%20git%20pull%20command%20is,
+        repository%20to%20match%20that%20content.&text=Once%20the%20content%20is%20downloaded,point%20at%20the%20new%20commit.">Read More </a> </p>
+
+        <h2>Remote Add / Remove / Show </h2>
+        <p> The "remote" command helps you to manage connections to remote repositories.
+
+            It allows you to show which remotes are currently connected, but also to add new connections or remove existing ones.</p>
+
+        <p> <strong>remove &ltname&gt</strong></p>
+      <p> Disconnects the remote from the local repository. Note that this will have no effect on the actual remote repository (i.e. the repository itself is not removed / deleted / etc.).
+      </p>
+        <p> <strong> rename &ltold-name&gt &ltnew-name&gt </strong></p>
+      <p>You can request a list of all remote repositories that are currently connected to your local repository:</p>
+        <img src="img/gitFlow4.PNG" height="300" width="250">
+        <a href="https://www.git-tower.com/learn/git/commands/git-remote/"> Read more</a>
+
+<h2> Git Status</h2>
+<p>The <i>git status </i> command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git.
+    Status output does not show you any information regarding the committed project history. For this, you need to use git log.</p>
+        <p> Usage </p>
+        <ul>
+            <ul><li style="color: red"> git status</li></ul></ul>
+
+
+    </div>
+
+
+</header>
+
+</body>
+
+<footer class="foot">
+    <div class="alert alert-primary" role="alert">
+        <small>&copy; Copyright 2021, Anxhela Mehmetaj</small>
+    </div>
+</footer>
+</html>
