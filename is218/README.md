@@ -1,16 +1,24 @@
 #project Is218
+
 #GitCollabration
+
 #Link
 [source link](https://anxhelamehmetaj.github.io/GitCollabration/is218/)
 
 [Github](https://github.com/AnxhelaMehmetaj/GitCollabration)
+
 #Contributors
+
 Anxhela Mehmetaj
+
 Mohammed F Syed
+
 Akash Patel
+
 #Sources
+
 [Git](https://www.atlassian.com/git/tutorials/syncing/git-pull#:~:text=The%20git%20pull%20command%20is,%20%20%20%20%20%20%20%20repository%20to%20match%20that%20content.&text=Once%20the%20content%20is%20downloaded,point%20at%20the%20new%20commit)
-#
+
 [Git-remote](https://www.git-tower.com/learn/git/commands/git-remote/)
 
 #Changelog
