@@ -1,4 +1,4 @@
-#project Is218
+#Project Is218
 
 #GitCollabration
 
@@ -58,11 +58,11 @@ Added Resolve Merge Conflict - Mohammed Syed
 
 Improved navbar design - Anxhela Mehmetaj
 
-Added Branch section - Mohammed Uddin
+Added Branch section - Mohammed Syed
 
 Fixed Commit section - Anxhela Mehmetaj
 
-Added Merge section - Mohammed Uddin
+Added Merge section - Mohammed Syed
 
 Made styling using bootstrap rows and columns - Anxhela Mehmetaj
 
