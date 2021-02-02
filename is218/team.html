@@ -47,7 +47,17 @@
         <h2> Difference between Git Clone and Git Fork</h2>
         <p>Since first you need to fork before cloning, although forking does not come as a strict pre-step for cloning. People of an organization working on a repository do not generally fork the repository.
             We have created this tutorial just to focus on the difference and make you clear about these two concepts viz. Git Cloning and Git Forking. </p>
-    <h2> Fork Example </h2>
+     <p>The fork is mostly used to propose any changes to the original project or create our new ideas for the project by fork and cloning the original project to our own scope as a starting point.
+     </p>
+        <h4>How can you modify/ contribute to the forked repository? </h4>
+        <p>Here the Git clone comes into the action.
+            You have to bring the forked code to your local environment to contribute to it.</p>
+      <h4> Why we need Fork?</h4>
+     <p>   You may don’t have the write permission to work directly on the main repository. (Mostly this model is used for open source projects).
+        If everyone clones and directly work on that main project repository/ branch then it’ll be very hard to manage.</p>
+
+
+        <h2> Fork Example </h2>
         <img src="img/team1.PNG" >
         <h2>Git Pull Request</h2>
         <ul><ul><li>Create a new dev branch </li>
@@ -56,12 +66,40 @@
         <li>Create a New Branch</li>
         <li>Make Changes Locally</li>
         <li>Update Local Repository</li>
-        <li>Create Pull Request</li> <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github#create-a-copy-of-the-repository">Read More</a>
+        <li>Create Pull Request</li>
+            <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github#create-a-copy-of-the-repository">Read More</a>
         </ul></ul>
         <img src="img/gitcollab01.PNG" >
+        <h2> Merge Conflict </h2>
+        <p> Version control systems are all about managing contributions between multiple distributed authors ( usually developers ). Sometimes multiple developers may try to edit the same content. If Developer A tries to edit code that Developer B is editing a conflict may occur. To alleviate the occurrence of conflicts developers will work in separate isolated branches.
+            The git merge command's primary responsibility is to combine separate branches and resolve any conflicting edits.</p>
+         <img src="img/team3.PNG">
+ <h2>Resolve Merge Conflict</h2>
+        <p>When you create a pull request Bitbucket automatically compares the source with your update and the destination with the original code. If anyone else has made changes in the destination to the same code you touched, we'll notify you of conflicts when you attempt to merge.
 
-    
+            When you have merge conflicts, you can't click the Merge button from the pull request to merge. To resolve these conflicts, you pull the changes to your local repository and fix them there.
+
+            Resolving the conflict between Git branches</p>
+           <p> These steps include details for resolving conflicts between two branches in a Git repository. You'll see references to these placeholders:
+           </p>
+        <ul> <ul>
+           <li> The directory to the forked repository as &ltrepo_directory&gt </li>
+
+            <li> The destination branch as &ltdestination_branch&gt </li>
+
+            <li> The source branch as &ltfeature_branch&gt</li>
+
+       <li> The file with resolved conflicts as &ltfilename&gt</li>
+    </ul> </ul>
+        <img src="img/team4.PNG">
+        <h2>Adding a collaborator to a Github Repo</h2>
+
     </div>
 </header>
 </body>
+<footer class="foot">
+    <div class="alert alert-primary" role="alert">
+        <small>&copy; Copyright 2021, Anxhela Mehmetaj</small>
+    </div>
+</footer>
 </html>
